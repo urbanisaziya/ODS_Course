@@ -27,3 +27,4 @@ df = df.replace({'Voice mail plan':d})
 Columns_to_show = ['Total day minutes', 'Total eve minutes', 'Total night minutes']
 #print(df.groupby(['Churn'])[Columns_to_show].describe(percentiles=[]))
 print(df.groupby(['Churn'])[Columns_to_show].agg([np.mean, np.std, np.max, np.min]))
+print('Hello world')
